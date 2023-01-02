@@ -3,7 +3,9 @@
 This is a simple card game using HTML, CSS and JavaScript. I also used an API to get the cards.
 
 
-https://user-images.githubusercontent.com/93344031/210252422-e06daf93-cf23-4cf2-9bd1-35d62ae8b17e.mov
+
+https://user-images.githubusercontent.com/93344031/210269341-fffaff07-d955-41f6-a962-09ee36b0a961.mov
+
 
 
 ## Installation
