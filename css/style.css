@@ -24,12 +24,19 @@ h2 {
   letter-spacing: 1px;
 }
 
-p {
+p,
+span {
   font-weight: 400;
 }
 
-p,
 h3 {
+  font-size: 2rem;
+  padding: 1rem 5rem;
+  letter-spacing: 1px;
+}
+
+p,
+span {
   padding: 1rem 5rem;
   font-size: 1.2rem;
   letter-spacing: 1px;
