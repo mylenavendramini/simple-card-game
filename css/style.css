@@ -29,7 +29,8 @@ span {
   font-weight: 400;
 }
 
-h3 {
+h3,
+h4 {
   font-size: 2rem;
   padding: 1rem 5rem;
   letter-spacing: 1px;
@@ -43,7 +44,8 @@ span {
 }
 
 h3,
-h2 {
+h2,
+h4 {
   text-transform: uppercase;
 }
 

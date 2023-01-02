@@ -1,6 +1,7 @@
 let deckId = "";
 
 document.querySelector("button").addEventListener("click", drawTwo);
+document.querySelector("h4").style.display = "none";
 
 fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
   .then((res) => res.json())
@@ -16,6 +17,7 @@ fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
 
 // User click in the "play" button:
 function drawTwo() {
+  document.querySelector("h4").style.display = "none";
   startCountdown();
   // Show the cards and the result container:
   document.querySelector("#game").style.display = "block";
@@ -26,6 +28,8 @@ function drawTwo() {
       // console.log(data);
       document.querySelector("#player1").src = data.cards[0].image;
       document.querySelector("#player2").src = data.cards[1].image;
+      document.querySelector("#you").innerText = "You";
+      document.querySelector("#computer").innerText = "Computer";
       let player1Val = convertToNum(data.cards[0].value);
       let player2Val = convertToNum(data.cards[1].value);
 
@@ -54,6 +58,7 @@ function startCountdown() {
     if (count === -1) {
       clearInterval(countdownInterval);
       document.querySelector("#game").style.display = "none";
+      document.querySelector("h4").style.display = "block";
     }
   }, 1000);
 }
